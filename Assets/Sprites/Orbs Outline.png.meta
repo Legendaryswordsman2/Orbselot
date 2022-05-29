@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a390cddd0fd968c41a981567dd28195c
+guid: d63ff6e1daedec742b987c93a3fa6af7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -238,7 +238,7 @@ TextureImporter:
         width: 256
         height: 232
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,7 +259,7 @@ TextureImporter:
         width: 257
         height: 232
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,9 +301,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: d63ff6e1daedec742b987c93a3fa6af7, type: 3}
-      name: Emission
+    secondaryTextures: []
     nameFileIdTable:
       Orbs_4: 1803661523
       Red Orb: 311610004
