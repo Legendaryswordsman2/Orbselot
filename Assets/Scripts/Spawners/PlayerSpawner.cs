@@ -19,7 +19,7 @@ public class PlayerSpawner : Spawner
     }
     IEnumerator SpawnOrb()
     {
-        yield return new WaitForSeconds(Random.Range(1, 6));
+        yield return new WaitForSeconds(Random.Range(0.1f, 0.2f));
 
         int xPivot = Random.Range(-2, 3);
         int yPivot = Random.Range(-2, 3);
