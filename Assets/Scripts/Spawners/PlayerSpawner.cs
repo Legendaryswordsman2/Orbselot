@@ -20,7 +20,13 @@ public class PlayerSpawner : Spawner
     IEnumerator SpawnOrb()
     {
         yield return new WaitForSeconds(Random.Range(1, 2));
-        GameObject newOrb = Instantiate(blueOrbPrefab, transform.position, Quaternion.identity, blueOrbSpawnParent);
+
+        int xPivot = Random.Range(-2, 3);
+        int yPivot = Random.Range(-2, 3);
+
+        Vector3 spawnPosition = new Vector3(transform.position.x + xPivot, transform.position.y + yPivot, 0);
+
+        GameObject newOrb = Instantiate(blueOrbPrefab, spawnPosition, Quaternion.identity, blueOrbSpawnParent);
         newOrb.GetComponent<BlueOrbBrain>().Init(target);
 
         StartCoroutine(SpawnOrb());
